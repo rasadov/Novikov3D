@@ -66,3 +66,5 @@ and vegetables
 18)Chocolate fondant with Pistachio Ice cream
 19)Strawberry “Taco”
 20)Dessert “Chocopie” with coconut
+
+800 * 600
