@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Append the appropriate file extension to the links
     links.forEach(link => {
+      console.log(`intent://arvr.google.com/scene-viewer/1.0?file=${link.href}/gltf&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;`);
       if (deviceType === 'android') {
-        link.href = `intent://arvr.google.com/scene-viewer/1.0?file=${link.href}/gltf&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;`;
+        link.href = `intent://arvr.google.com/scene-viewer/1.0?file=${link.href}gltf&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;end;`;
 
         // link.href += 'gltf';
       } else if (deviceType === 'ios') {
